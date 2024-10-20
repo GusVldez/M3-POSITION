@@ -1,0 +1,85 @@
+/* CSS: Alineación Compleja de la Card */
+
+.container {
+
+    display: flex;
+  
+    justify-content: center; /* Centrar horizontalmente */
+  
+    align-items: center; /* Centrar verticalmente */
+  
+    height: 100vh; /* Hacer que ocupe toda la altura de la pantalla */
+  
+    background-color: #f4f4f4;
+  
+  }
+  
+  .card {
+  
+    background-color: white;
+  
+    padding: 20px;
+  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+    border-radius: 8px;
+  
+    text-align: center;
+  
+  }
+
+  box1 {
+
+    position: absolute;
+  
+    top: 50px;
+  
+    left: 50px;
+  
+    width: 150px;
+  
+    height: 150px;
+  
+    background-color: red;
+  
+    z-index: 1; /* Esta caja se muestra por encima */
+  
+  }
+  
+  .box2 {
+  
+    position: absolute;
+  
+    top: 100px;
+  
+    left: 100px;
+  
+    width: 150px;
+  
+    height: 150px;
+  
+    background-color: blue;
+  
+    z-index: 0; /* Esta caja se muestra por debajo */
+  
+  }
+
+  .fixed-menu {
+
+    position: fixed;
+  
+    top: 0;
+  
+    left: 0;
+  
+    width: 100%;
+  
+    background-color: #333;
+  
+    color: white;
+  
+    padding: 10px;
+  
+    z-index: 1000; /* Alto valor de z-index para estar siempre por encima */
+  
+  }
